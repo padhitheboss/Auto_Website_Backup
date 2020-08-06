@@ -7,7 +7,7 @@ BACKUP_PATH="$HOME/backups/$TODAY"
 DB_NAME="DATABASE_NAME_HERE"
 DB_USER="DATABASE_USERNAME_HERE"              #Backup All Database require root privilage
 DB_PASS="DATABASE_PASSWORD_HERE"
-DB_HOST="deevehs.cneuw48yd50i.ap-south-1.rds.amazonaws.com"              #If sql server is installed on your local machine set DB_HOST="localhost" OR "127.0.0.1"
+DB_HOST="DATABASE HOSTNAME HERE"               #If sql server is installed on your local machine set DB_HOST="localhost" OR "127.0.0.1"
 
 if [ ! -d "$BACKUP_PATH" ] && [ "$(mkdir -p $BACKUP_PATH)" ]; then
     echo "BACKUP_PATH is not found at $BACKUP_PATH. The script can't create it, either!"
